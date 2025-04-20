@@ -4,8 +4,9 @@ from sqlalchemy import pool
 
 from alembic import context
 from app.core.config import settings
-from app.db.init_db import Base
+from app.models.base import Base
 from app.models.user import User
+from app.models.notification import Notification
 
 config = context.config
 
